@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "09199a96-44bc-4310-aa7d-5c20758b5e75": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20725985575217__09199a96-44bc-4310-aa7d-5c20758b5e75-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h1"
+          }
+        },
+        "template--20725985575217__09199a96-44bc-4310-aa7d-5c20758b5e75-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DAILY TRAILは、現在のスニーカーシーンに新たなスタンダードを築き上げるために誕生したデザイン性と機能性を兼ね備えたスニーカーブランドです。<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20725985575217__09199a96-44bc-4310-aa7d-5c20758b5e75-heading-1",
+        "template--20725985575217__09199a96-44bc-4310-aa7d-5c20758b5e75-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "b8000cd8-21e5-41a0-b23c-1c9d8947a9f4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20725985575217__b8000cd8-21e5-41a0-b23c-1c9d8947a9f4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Creation",
+            "heading_size": "h1"
+          }
+        },
+        "template--20725985575217__b8000cd8-21e5-41a0-b23c-1c9d8947a9f4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ファッショナブルなだけではなく、機能性も重視したオリジナリティ溢れる商品とサービスをお客様に提案いたします。<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--20725985575217__b8000cd8-21e5-41a0-b23c-1c9d8947a9f4-heading-1",
+        "template--20725985575217__b8000cd8-21e5-41a0-b23c-1c9d8947a9f4-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "33e427d0-ec2c-4f6e-abd5-d9da76f6e5cc": {
+      "type": "image-with-text",
+      "blocks": {
+        "f53731a3-dba5-4be3-b9f5-7fab1c54b81a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Evolution",
+            "heading_size": "h1"
+          }
+        },
+        "8e1e9417-036e-48aa-aac5-78e67597706a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>お客様に支持され続けるブランドになるよう国内外のカルチャーにアンテナを張り、時代とともに進化していきます。<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "f53731a3-dba5-4be3-b9f5-7fab1c54b81a",
+        "8e1e9417-036e-48aa-aac5-78e67597706a"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "3c96115f-62b5-46bf-a682-66da8a6f65ec": {
+      "type": "image-with-text",
+      "blocks": {
+        "f42bda7e-1b49-427a-bce4-1644e298bb3a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Share",
+            "heading_size": "h1"
+          }
+        },
+        "b3a0943a-991a-4dda-be63-2db46752a41f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ブランドが持つカルチャーや世界観を発信し共有することで、ブランドの価値を高め、より良いサービスを提供していきます。<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "f42bda7e-1b49-427a-bce4-1644e298bb3a",
+        "b3a0943a-991a-4dda-be63-2db46752a41f"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "09199a96-44bc-4310-aa7d-5c20758b5e75",
+    "b8000cd8-21e5-41a0-b23c-1c9d8947a9f4",
+    "33e427d0-ec2c-4f6e-abd5-d9da76f6e5cc",
+    "3c96115f-62b5-46bf-a682-66da8a6f65ec"
+  ]
+}
