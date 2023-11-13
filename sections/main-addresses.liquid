@@ -176,7 +176,6 @@
           {%- if address == customer.default_address -%}
             <h2>{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
-          {% comment %} {{ address | format_address }} {% endcomment %}
           〒{{ address.zip }}<br>
             {{ address.province }} {{ address.city }} {{ address.street }}<br>
             {{ address.last_name }} {{ address.first_name }}<br>
