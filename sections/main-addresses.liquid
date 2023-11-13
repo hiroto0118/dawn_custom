@@ -42,17 +42,6 @@
           <div class="field">
             <input
               type="text"
-              id="AddressFirstNameNew"
-              name="address[first_name]"
-              value="{{ form.first_name }}"
-              autocomplete="given-name"
-              placeholder="{{ 'customer.addresses.first_name' | t }}"
-            >
-            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
-          </div>
-          <div class="field">
-            <input
-              type="text"
               id="AddressLastNameNew"
               name="address[last_name]"
               value="{{ form.last_name }}"
@@ -60,6 +49,17 @@
               placeholder="{{ 'customer.addresses.last_name' | t }}"
             >
             <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
+          </div>
+          <div class="field">
+            <input
+              type="text"
+              id="AddressFirstNameNew"
+              name="address[first_name]"
+              value="{{ form.first_name }}"
+              autocomplete="given-name"
+              placeholder="{{ 'customer.addresses.first_name' | t }}"
+            >
+            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
           </div>
           <div class="field">
             <input
@@ -72,6 +72,59 @@
             >
             <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
           </div>
+          <div>
+            <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+            <div class="select">
+              <select
+                id="AddressCountryNew"
+                name="address[country]"
+                data-default="{{ form.country }}"
+                autocomplete="country"
+              >
+                {{ all_country_option_tags }}
+              </select>
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                <use href="#icon-caret" />
+              </svg>
+            </div>
+          </div>
+          <div class="field">
+            <input
+              type="text"
+              id="AddressZipNew"
+              name="address[zip]"
+              value="{{ form.zip }}"
+              autocapitalize="characters"
+              autocomplete="postal-code"
+              placeholder="{{ 'customer.addresses.zip' | t }}"
+            >
+            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+          </div>
+          <div id="AddressProvinceContainerNew" style="display: none">
+            <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+            <div class="select">
+              <select
+                id="AddressProvinceNew"
+                name="address[province]"
+                data-default="{{ form.province }}"
+                autocomplete="address-level1"
+              ></select>
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                <use href="#icon-caret" />
+              </svg>
+            </div>
+          </div>
+          <div class="field">
+            <input
+              type="text"
+              id="AddressCityNew"
+              name="address[city]"
+              value="{{ form.city }}"
+              autocomplete="address-level2"
+              placeholder="{{ 'customer.addresses.city' | t }}"
+            >
+            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+            </div>
           <div class="field">
             <input
               type="text"
@@ -93,59 +146,6 @@
               placeholder="{{ 'customer.addresses.address2' | t }}"
             >
             <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
-          </div>
-          <div class="field">
-            <input
-              type="text"
-              id="AddressCityNew"
-              name="address[city]"
-              value="{{ form.city }}"
-              autocomplete="address-level2"
-              placeholder="{{ 'customer.addresses.city' | t }}"
-            >
-            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
-          </div>
-          <div>
-            <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
-            <div class="select">
-              <select
-                id="AddressCountryNew"
-                name="address[country]"
-                data-default="{{ form.country }}"
-                autocomplete="country"
-              >
-                {{ all_country_option_tags }}
-              </select>
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                <use href="#icon-caret" />
-              </svg>
-            </div>
-          </div>
-          <div id="AddressProvinceContainerNew" style="display: none">
-            <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
-            <div class="select">
-              <select
-                id="AddressProvinceNew"
-                name="address[province]"
-                data-default="{{ form.province }}"
-                autocomplete="address-level1"
-              ></select>
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                <use href="#icon-caret" />
-              </svg>
-            </div>
-          </div>
-          <div class="field">
-            <input
-              type="text"
-              id="AddressZipNew"
-              name="address[zip]"
-              value="{{ form.zip }}"
-              autocapitalize="characters"
-              autocomplete="postal-code"
-              placeholder="{{ 'customer.addresses.zip' | t }}"
-            >
-            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
           </div>
           <div class="field">
             <input
@@ -176,7 +176,10 @@
           {%- if address == customer.default_address -%}
             <h2>{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
-          {{ address | format_address }}
+          〒{{ address.zip }}<br>
+            {{ address.province }} {{ address.city }} {{ address.street }}<br>
+            {{ address.last_name }} {{ address.first_name }}<br>
+
           <button
             type="button"
             id="EditFormButton_{{ address.id }}"
