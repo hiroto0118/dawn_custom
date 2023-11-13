@@ -52,6 +52,21 @@
     <div class="field">
       <input
         type="text"
+        name="customer[last_name]"
+        id="RegisterForm-LastName"
+        {% if form.last_name %}
+          value="{{ form.last_name }}"
+        {% endif %}
+        autocomplete="family-name"
+        placeholder="{{ 'customer.register.last_name' | t }}"
+      >
+      <label for="RegisterForm-LastName">
+        {{ 'customer.register.last_name' | t }}
+      </label>
+    </div>
+    <div class="field">
+      <input
+        type="text"
         name="customer[first_name]"
         id="RegisterForm-FirstName"
         {% if form.first_name %}
@@ -66,17 +81,17 @@
     </div>
     <div class="field">
       <input
-        type="text"
-        name="customer[last_name]"
-        id="RegisterForm-LastName"
-        {% if form.last_name %}
-          value="{{ form.last_name }}"
+        type="date"
+        name="customer[note][birthday]"
+        id="RegisterForm-Birthday"
+        {% if form.birthday %}
+          value="{{ form.birthday }}"
         {% endif %}
-        autocomplete="family-name"
-        placeholder="{{ 'customer.register.last_name' | t }}"
+        autocomplete="bday"
+        placeholder="{{ 'customer.register.birthday' | t }}"
       >
-      <label for="RegisterForm-LastName">
-        {{ 'customer.register.last_name' | t }}
+      <label for="RegisterForm-Birthday">
+        {{ 'customer.register.birthday' | t }}
       </label>
     </div>
     <div class="field">
