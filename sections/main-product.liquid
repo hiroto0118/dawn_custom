@@ -79,6 +79,26 @@
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
+             {%- when 'line-item-property-file' -%}
+              {% for tag in product.tags %}
+                {% if tag == "メンズ" %}
+                  <p class="line-item-property__field">
+                    <label for="line-item-property-file">添付ファイル</label>
+                    <input id="line-item-property-file" type="file" name="properties[添付ファイル]" form="{{ product_form_id }}">
+                  </p>
+                {% endif %}
+              {% endfor %}
+              
+             {%- when 'line-item-property-short' -%}
+              <p class="line-item-property__field">
+                <label for="line-item-property-short">名前入れ</label>
+                <input id="line-item-property-short" type="text" name="properties[名前入れ]" form="{{ product_form_id }}">
+              </p>
+           {%- when 'line-item-property-long' -%}
+            <p class="line-item-property__field">
+              <label for="line-item-property-long">メッセージ</label>
+              <textarea id="line-item-property-long" name="properties[メッセージ]" form="{{ product_form_id }}"></textarea>
+            </p>
             {%- when 'text' -%}
               <p
                 class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -678,6 +698,18 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "line-item-property-file",
+      "name": "Line-Item-Property-File"
+    },
+    {
+      "type": "line-item-property-short",
+      "name": "Line-Item-Property-Short"
+    },
+    {
+      "type": "line-item-property-long",
+      "name": "Line-Item-Property-Long"
     },
     {
       "type": "text",
