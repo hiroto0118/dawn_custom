@@ -34,6 +34,12 @@
           "settings": {
           }
         },
+        "169f7a1d-dced-4fa5-9b92-d394c026d20e": {
+          "type": "add-variant",
+          "settings": {
+            "variation_text": "色"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -79,6 +85,7 @@
         "a27800ad-05c1-40c6-ab4b-53af0091ea01",
         "caabd5f2-03a4-4b23-b9bc-380fd35d935c",
         "price",
+        "169f7a1d-dced-4fa5-9b92-d394c026d20e",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -88,6 +95,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
