@@ -59,10 +59,20 @@
         class="disabled"
       {% endif %}
     >
+
+      {% if product.variants[forloop.index0].metafields.custom.color_1 and option.name == "色" %}
+        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background:linear-gradient(to right,{{ product.variants[forloop.index0].metafields.custom.color_1 }},{{ product.variants[forloop.index0].metafields.custom.color_2 }}">
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
+      {% else %}
     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
+  {% endif %}
+
+
+    
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
