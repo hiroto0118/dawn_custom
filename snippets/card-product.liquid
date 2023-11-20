@@ -22,6 +22,7 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+{{ 'custom-tag.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -134,6 +135,14 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
+              {% else %}
+                {% for tag in card_product.tags %}
+                  {% if tag contains '__label' %}
+                    <span class="badge badge--bottom-left color-{{ settings.label_badge_color_scheme }}">
+                    {{ tag | split: ':' | last }}
+                  </span>
+                  {% endif %}
+                {% endfor %}
             {%- endif -%}
           </div>
         </div>
@@ -155,7 +164,13 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+
           <div class="card-information">
+            {% for tag in card_product.tags %}
+              {% if tag contains '__tags' %}
+                <span class="badge badge_tag badge_tag-{% if tag contains '__tags2' %}2{% elsif tag contains '__tags3' %}3{% endif %}">{{ tag| split: ':' | last }}</span>
+              {% endif %}
+            {% endfor %}
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
@@ -367,3 +382,4 @@
     </div>
   </div>
 {%- endif -%}
+
