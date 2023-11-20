@@ -1293,6 +1293,48 @@
         "id": "sold_out_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
         "default": "inverse"
+      },
+      {
+        "type": "color_scheme",
+        "id": "label_badge_color_scheme",
+        "label": "ラベル設定",
+        "default": "inverse"
+      },
+      {
+        "type": "color",
+        "id": "tag_badge_color_scheme_text_1",
+        "label": "商品タグのテキストカラー",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "tag_badge_color_scheme_1",
+        "label": "商品タグの背景カラー",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "tag_badge_color_scheme_text_2",
+        "label": "商品タグ2のテキストカラー",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "tag_badge_color_scheme_2",
+        "label": "商品タグ2の背景カラー",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "tag_badge_color_scheme_text_3",
+        "label": "商品タグ3のテキストカラー",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "tag_badge_color_scheme_3",
+        "label": "商品タグ3の背景カラー",
+        "default": "#000000"
       }
     ]
   },
