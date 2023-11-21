@@ -68,6 +68,13 @@
             "th": "メールアドレス",
             "td": "<p>\tsupport@dailytraial.com<\/p>"
           }
+        },
+        "90a692dd-1489-4a21-979e-8c70cffd490d": {
+          "type": "table",
+          "settings": {
+            "th": "商品",
+            "td": "<p>DAILY AIR MAX<br>\nDAILY SPORTS<br>\nDAILY KIDS<\/p>"
+          }
         }
       },
       "block_order": [
@@ -75,7 +82,8 @@
         "98f2e357-c136-47ab-8347-c7aa97ad652e",
         "32e86567-2a54-4be8-9c94-4a43282de4d6",
         "b5fe3627-058a-4c89-8250-ce73c526f5e6",
-        "fc0532bf-e54f-4378-ad41-1ab380fe36f3"
+        "fc0532bf-e54f-4378-ad41-1ab380fe36f3",
+        "90a692dd-1489-4a21-979e-8c70cffd490d"
       ],
       "settings": {
         "page-width": 1000,
