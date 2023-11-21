@@ -75,7 +75,8 @@
                 show_image: section.settings.show_image,
                 show_date: section.settings.show_date,
                 show_author: section.settings.show_author,
-                show_excerpt: true
+                show_excerpt: section.settings.show_excerpt,
+                excerpt_count: section.settings.excerpt_count
               %}
             </li>
           {%- endfor -%}
@@ -268,6 +269,21 @@
       "id": "show_author",
       "default": false,
       "label": "t:sections.featured-blog.settings.show_author.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "default": true,
+      "label": "抜粋を表示する"
+    },
+    {
+      "type": "range",
+      "id": "excerpt_count",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "label": "文字数",
+      "default": 30
     },
     {
       "type": "checkbox",
