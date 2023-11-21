@@ -26,13 +26,19 @@
           "type": "content",
           "settings": {
           }
+        },
+        "8d3a892d-cdeb-4c25-b7ee-bd0252fae355": {
+          "type": "related-products",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "featured_image",
         "title",
         "share",
-        "content"
+        "content",
+        "8d3a892d-cdeb-4c25-b7ee-bd0252fae355"
       ],
       "settings": {
       }
