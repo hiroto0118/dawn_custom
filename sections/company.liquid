@@ -1,0 +1,166 @@
+
+<section id="shopify-section-{{ section.id }}" class="page-width">
+    <div class="table__container">
+      <div class="table__wrapper">
+        <table>
+          <tbody>
+            {% for block in section.blocks %}
+              <tr>
+                <th><p>{{ block.settings.th }}</p></th>
+                <td>{{ block.settings.td }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <style>
+    #shopify-section-{{ section.id }} .table__wrapper td {
+      width: {{ section.settings.td_width }}%;
+    }
+    #shopify-section-{{ section.id }} .page-width {
+      margin-top: {{ section.settings.pc_margin_top }}px;
+      margin-bottom: {{ section.settings.pc_margin_bottom }}px;
+      max-width: {{ section.settings.page-width }}px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} .page-width {
+          margin-top: {{ section.settings.sp_margin_top }}px;
+          margin-bottom: {{ section.settings.sp_margin_bottom }}px;
+          max-width:100%;
+            padding: 15px;
+      }
+    }
+  
+    .section .container {
+      max-width: 1000px;
+  }
+  .table__container tr, .table__container td {
+      border: 1px solid #333;
+  }
+  .table__container table {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 840px;
+  }
+  .table__wrapper th {
+      text-align: left;
+      padding: 14px 0 0 30px;
+      background: #f7f7f7;
+  }
+  .table__wrapper td {
+      padding: 14px 28px;
+  }
+  .table__container tr, .table__container td {
+      border: 1px solid #333;
+  }
+  </style>
+
+  
+{% schema %}
+{
+  "name": "会社概要",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "page-width",
+      "label" : "最大コンテンツ幅（PC)",
+      "min" : 800,
+      "max" : 1500,
+      "step": 50,
+      "unit": "px",
+      "default": 1000
+    },
+    {
+      "type": "range",
+      "id": "td_width",
+      "label" : "内容の幅",
+      "min" : 10,
+      "max" : 90,
+      "step": 10,
+      "unit": "%",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "pc_margin_top",
+      "label" : "PC上余白",
+      "min" : 0,
+      "max" : 200,
+      "step": 10,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "pc_margin_bottom",
+      "label" : "PC下余白",
+      "min" : 0,
+      "max" : 200,
+      "step": 10,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "sp_margin_top",
+      "label" : "SP上余白",
+      "min" : 0,
+      "max" : 200,
+      "step": 10,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "sp_margin_bottom",
+      "label" : "SP下余白",
+      "min" : 0,
+      "max" : 200,
+      "step": 10,
+      "unit": "px",
+      "default": 10
+    }
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "name": "テーブル",
+      "settings": [
+       {
+        "id": "th",
+        "type": "text",
+        "label": "項目名",
+        "default": "項目名"
+       },
+       {
+        "id": "td",
+        "type": "textarea",
+        "label": "内容",
+        "default": "<p>内容</p>",
+        "info": "改行には<br>を使用してください"
+       }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "会社概要",
+      "blocks": [
+        {
+          "type": "table"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
