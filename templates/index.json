@@ -214,9 +214,18 @@
         "show_image": false,
         "show_date": true,
         "show_author": false,
+        "show_excerpt": true,
+        "excerpt_count": 30,
         "show_view_all": true,
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "55af3dd9-0db2-40d0-bfce-7482094c681b": {
+      "type": "news",
+      "settings": {
+        "title": "NEWS",
+        "news_blog": "news"
       }
     }
   },
@@ -227,6 +236,7 @@
     "bf46e80f-8381-41a1-b793-65138e2e97fc",
     "92dc085f-47b4-441c-a3ff-a900cd422428",
     "e36b0221-5650-4731-8644-91e91518409c",
-    "8aa311f6-54d3-4366-b7ba-e8fbd3468bed"
+    "8aa311f6-54d3-4366-b7ba-e8fbd3468bed",
+    "55af3dd9-0db2-40d0-bfce-7482094c681b"
   ]
 }
