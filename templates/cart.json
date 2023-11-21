@@ -3,6 +3,7 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -10,6 +11,16 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
+        "e6fe45ba-7534-42ab-94f0-60172f380cbc": {
+          "type": "gift",
+          "settings": {
+          }
+        },
+        "07336b4e-c0d0-48e0-8efc-4573694620bd": {
+          "type": "delivery",
+          "settings": {
+          }
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {
@@ -22,10 +33,13 @@
         }
       },
       "block_order": [
+        "e6fe45ba-7534-42ab-94f0-60172f380cbc",
+        "07336b4e-c0d0-48e0-8efc-4573694620bd",
         "subtotal",
         "buttons"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 20,
         "padding_bottom": 40
       }
