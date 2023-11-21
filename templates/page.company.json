@@ -65,8 +65,8 @@
         "fc0532bf-e54f-4378-ad41-1ab380fe36f3": {
           "type": "table",
           "settings": {
-            "th": "項目名",
-            "td": "<p>内容<\/p>"
+            "th": "メールアドレス",
+            "td": "<p>\tsupport@dailytraial.com<\/p>"
           }
         }
       },
