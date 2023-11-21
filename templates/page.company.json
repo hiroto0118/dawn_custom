@@ -30,10 +30,66 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "a0e6b68f-e330-4beb-8ecf-884e70d1b67b": {
+      "type": "company",
+      "blocks": {
+        "template--21614737916209__a0e6b68f-e330-4beb-8ecf-884e70d1b67b-table-1": {
+          "type": "table",
+          "settings": {
+            "th": "会社名",
+            "td": "<p>株式会社デイトラ<\/p>"
+          }
+        },
+        "98f2e357-c136-47ab-8347-c7aa97ad652e": {
+          "type": "table",
+          "settings": {
+            "th": "項目名",
+            "td": "<p>内容<\/p>"
+          }
+        },
+        "32e86567-2a54-4be8-9c94-4a43282de4d6": {
+          "type": "table",
+          "settings": {
+            "th": "項目名",
+            "td": "<p>内容<\/p>"
+          }
+        },
+        "b5fe3627-058a-4c89-8250-ce73c526f5e6": {
+          "type": "table",
+          "settings": {
+            "th": "項目名",
+            "td": "<p>内容<\/p>"
+          }
+        },
+        "fc0532bf-e54f-4378-ad41-1ab380fe36f3": {
+          "type": "table",
+          "settings": {
+            "th": "項目名",
+            "td": "<p>内容<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21614737916209__a0e6b68f-e330-4beb-8ecf-884e70d1b67b-table-1",
+        "98f2e357-c136-47ab-8347-c7aa97ad652e",
+        "32e86567-2a54-4be8-9c94-4a43282de4d6",
+        "b5fe3627-058a-4c89-8250-ce73c526f5e6",
+        "fc0532bf-e54f-4378-ad41-1ab380fe36f3"
+      ],
+      "settings": {
+        "page-width": 1000,
+        "td_width": 70,
+        "pc_margin_top": 10,
+        "pc_margin_bottom": 10,
+        "sp_margin_top": 10,
+        "sp_margin_bottom": 10
+      }
     }
   },
   "order": [
     "main",
-    "3486f7be-b736-4ae1-a11d-8a14f6af42fc"
+    "3486f7be-b736-4ae1-a11d-8a14f6af42fc",
+    "a0e6b68f-e330-4beb-8ecf-884e70d1b67b"
   ]
 }
